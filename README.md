@@ -2,7 +2,7 @@
 Kontrola servo uređaja koristeći Arduino razvojni sistem
 
 1. Uvod
-2. 
+
 Sama ideja projekta jeste izvršiti kontrolu servo motora koristeći džojstik. Kao posredni uređaj koji će nam sve ovo obezbediti, koristićemo Arduino razvojni sistem koji je open-source code tipa. Projekat se izrađuje u svrhu predmeta pod imenom Samostalni praktični projekat.
 Motivacija je osmisliti kompatibilan sistem upravljanja koji se može ukombinovati u bilo koju svrhu, primera: sistem se može ugraditi u robota koji je bežično kontrolisan, i biti korišćen za pristup nepreglednim, nepristupačnim ili pak opasnim mestima po čoveka. Na servo motore se može ugraditi, laser, kamera ili otale komponente u zavisnosti od svrhe u koje će se koristiti.
 
@@ -12,11 +12,10 @@ Kada se upoznamo sa samim komponentama prelazimo na kod koji će se izvršavati 
 Na kraju svega završavamo tesiranjem funkcionalnosti uređaja u celosti, zaokružujemo rezultat i izvodimo generalni zaključak.
 
 2. Analiza zadatka
-3. 
+
 Princip koji se koristi za ovakve tipove uređajaj je jednostavna robotizovana ruka. Može se ostvariti jednostavnim električnim servo motorima, hidrauličnim komponentama ukoliko je u pitanju rad sa težim stvarima. Jedan servo motor pokriva jednu osu po kojoj će se robotizovana ruka kretati, u našem primeru to su dva servo motora od kojih će jedan vršiti pomeranje po x osi, a drugi po y osi. U industriji proizvodnje uglavnom ćemo se susretati sa robotima koji imaju 3 ose.
 
 3. Opis hardverskih delova
-
 
 Komponente koje koristimo za izradu su sledeće:
 
@@ -80,7 +79,6 @@ Ground(-) -> Arduino Ground pin
 
 5. Rezultati testiranja
 
-
 Razvojni sistem povezujemo sa računarom i sa njega preko programa za upravljanje sistemom spuštamo prethodno navedeni kod u memoriju razvojnog sistema i na njemu izvršavamo isti.
 Dakle po kodu i objašnjenju pomeranje pečurkice džojstika levo i desno će aktivirati servo motor koji je zadužen za X osu i po njoj će rotirati komponente koje su na njega nakačene.
 Isti princip je i za Y osu, pomeranjem pečurkice džojstika gore i dole će aktivirati drugi servo motor koji će rotirati nakačene komponente po Y osi.
@@ -88,12 +86,10 @@ Laser se po kodu automatski uključuje čim se sam kod krene izvršavati. IF nar
 
 6. Zaključak
 
-
 Dakle, nakon što smo izvršili testiranje, razvojni sistem zajedno sa ostalim komponentama i dobro izrađenim kodom nam omogućava upravljanje servo motorima koristeći džojstik. Takođe koristimo i laser kako bismo videli tačnije položaje servo motora u prostoru. Umesto lasera, može biti montirana i kamera, ultrazvučni senzor ili slično u zavisnosti od primene.
 Pravac unapređenja ovog sistema bi bila montaža na robota koji koristi i step motore za kretanje, kao i bežični prijemnik/predajnik preko kog ćemo komunicirati sa sistemom i vršiti njegovo upravljanje na daljinu.
 
 7. Literatura
-
 
 Arduino sajt: Tutorial Arduino Mini Laser Turret Control, 06.09.2021. LINK
 Arduino Modules: KY-023 / KY-008 / SG90 Servo 06.09.2021. LINK
