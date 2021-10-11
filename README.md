@@ -34,8 +34,11 @@ Analogni ulazni pinovi	: 6
 DC (jednosmerna) struja po I/O pinu:	40mA
 DC (jednosmerna) struja za pin na 3.3V:	50mA
 Flash memorija:	32KB (ATmega328) od kojih je 0.5 KB iskorišćeno za bootloader
+
 SRAM:	2KB (ATmega328)
+
 EEPROM:	1KB (ATmega328)
+
 Clock Speed:	16MHz
 
 Arduino joystick KY-023 specifikacije:
